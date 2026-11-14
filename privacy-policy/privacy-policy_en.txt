@@ -1,0 +1,45 @@
+Privacy Policy for ReelMirror on Android
+
+Effective date - November 14, 2026
+
+This policy applies to the ReelMirror app for Android (com.reelmirror). The app is published by KXXR Studio, Poland. For privacy inquiries, contact us at kxxr.studio@gmail.com.
+
+Camera, microphone and recordings
+
+In Camera mode, the app uses your device's camera to display a preview, stream live video and save recordings. You can start recording on the phone or from a connected Monitor. When audio recording is enabled and the app has microphone permission, audio is included in the recording file. You can record without audio. The app may display a notification when the camera is active or recording is in progress.
+
+Recordings are saved as MP4 files in the media storage of the phone used as the Camera. On Android 10 and later, the app saves them in the Movies/ReelMirror folder. To display your recordings, the app reads file details such as the name, date, duration, size and resolution. When you open a recording, the app grants your selected media player access to the file. Your gallery or another app with file access may copy recordings according to your device settings.
+
+Live preview on a second device
+
+In Monitor mode, the app displays live video from a connected Camera. Live streaming can run without saving a recording. The Monitor receives video without audio. In Monitor mode, the app does not save the incoming video as a recording. MP4 files stay on the phone used as the Camera unless you transfer them or another app with access copies them.
+
+When the app makes the Camera discoverable, other devices on the local network can read a broadcast containing the phone model, a randomly generated installation identifier and connection details. During pairing, the Camera receives the Monitor's name and identifier and reads the IP address of the connection. An approved Monitor can view the live stream, change camera settings, and start and stop recording. The Monitor also receives details needed to operate the preview and recording controls, including available storage, video quality, recording status, file name, duration and size.
+
+The live preview uses a direct WebRTC connection between devices. The app looks for the Camera on the local network. If you connect manually, the Monitor contacts the address you enter, which may be outside your local Wi-Fi network.
+
+Security and diagnostics
+
+WebRTC encrypts the video stream in transit. The devices use a separate channel to exchange pairing data, technical connection details, commands and recording metadata. That channel operates without TLS encryption. If you choose to remember a Monitor, the Camera recognizes it by its identifier so it can reconnect without another approval.
+
+The app keeps diagnostic information about connections and recording errors in app memory and in Android system logs. This information may include IP addresses, device names and identifiers, and file details. The app does not automatically send recordings, live video or these logs to the publisher's servers. The app operates without accounts, ads, ad tracking or usage analytics.
+
+If you install the app from Google Play and enable usage and diagnostics sharing in Android, Google may collect data about crashes or instances when the app stops responding. Google may provide diagnostic information to the publisher through Android vitals in Google Play Console to help identify stability issues. You can manage diagnostic sharing in Android settings.
+
+Retention, deletion and permissions
+
+- Recordings stay on your phone until deleted. You can delete them in your gallery or file manager. If you use a trash folder or media backup, manage those copies in the app that stores them.
+
+- Settings, the installation identifier and remembered pairings stay in the app's data. The app also remembers the last address and port you entered manually. To delete this data, select ReelMirror in Android settings and clear its app data. Delete recordings in media storage separately.
+
+- Android system backups may include app data such as settings and pairings. Depending on your settings, Android may restore that data from a backup or transfer it to a new device. You can manage backups in Android settings.
+
+- Diagnostics shown in Monitor mode are limited to the 100 most recent entries kept in app memory. Android retains system logs according to its settings and limits.
+
+- Camera, microphone and notification permissions can be changed in Android settings. Revoking microphone permission disables audio recording. Revoking camera permission prevents the app from capturing video.
+
+Contacting the publisher
+
+If you contact us, we receive your email address, the contents of your message and any attachments. We use this information to handle your inquiry and respond. We use Gmail to handle email. Our legal basis for routine correspondence is our legitimate interest in handling inquiries (Article 6(1)(f) GDPR). If your message is about exercising a GDPR right, we process it to comply with a legal obligation (Article 6(1)(c) GDPR).
+
+We keep correspondence for as long as needed to resolve the matter. We may retain it for longer to the extent required by law. You can contact us about your data at the email address above. Depending on the legal basis and circumstances, you may have the right to access, rectify or erase your personal data, restrict its processing, or object to its processing. You may also lodge a complaint with the President of the Polish Personal Data Protection Office.
