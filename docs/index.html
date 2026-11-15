@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ReelMirror privacy policy in English and Polish. Polityka prywatności aplikacji ReelMirror.">
+  <title>ReelMirror — Privacy Policy / Polityka prywatności</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; font-synthesis: none; }
+    * {box-sizing: border-box}
+    body { margin: 0; background: #f5f7fb; color: #1b2536; }
+    .wrap { width: min(100% - 36px, 820px); margin: auto; }
+    .topbar { background: #111d33; color: #fff; }
+    .topbar .wrap { min-height: 76px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand {font-size: 1.18rem; font-weight: 750; letter-spacing: -.025em;}
+    .brand small {font-size: .72rem; font-weight: 500; opacity: .75; display: block; letter-spacing: .08em; text-transform: uppercase;}
+    .switcher {display: flex; gap: 4px; padding: 4px; background: #293850; border-radius: 11px;}
+    .switcher button {border: 0; background: transparent; color: #fff; border-radius: 8px; padding: 9px 15px; font: inherit; font-weight: 650; cursor: pointer;}
+    .switcher button[aria-pressed="true"] {background: #fff; color: #14213a;}
+    .switcher button:focus-visible, a:focus-visible {outline: 3px solid #3999ff; outline-offset: 3px;}
+    main {padding: 35px 0 56px;}
+    .policy {background: #fff; border: 1px solid #e3e9f1; border-radius: 18px; padding: clamp(24px, 5.4vw, 52px); box-shadow: 0 10px 32px rgba(17, 29, 51, .045);}
+    .eyebrow {font-weight: 700; font-size: .76rem; letter-spacing: .09em; color: #47658c;}
+    .eyebrow span {padding: 0 8px; color: #9cacc3;}
+    h1 {font-size: clamp(1.75rem, 4.5vw, 2.65rem); letter-spacing: -.035em; line-height: 1.22; margin: 14px 0 12px;}
+    .date {color: #58677e; font-size: .95rem; margin-bottom: 29px;}
+    .intro {font-size: 1.025rem;}
+    section {margin-top: 34px;}
+    h2 {font-size: 1.28rem; line-height: 1.4; margin: 0 0 13px; letter-spacing: -.018em;}
+    p {margin: 0 0 15px; overflow-wrap: break-word;}
+    li {padding-left: 4px; margin-bottom: 12px;}
+    ul {padding-left: 23px; margin: 0;}
+    a {color: #195db1; text-underline-offset: 3px;}
+    footer {padding: 0 0 30px; text-align: center; color: #65738a; font-size: .85rem;}
+    [hidden] {display: none !important;}
+    @media (max-width: 520px) { .topbar .wrap {min-height: 70px;} .wrap {width: min(100% - 24px, 820px);} main {padding-top: 14px;} .policy {border-radius: 13px;} }
+    @media (prefers-color-scheme: dark) {
+      body {background: #0c1421; color: #edf2f9;}
+      .topbar {background: #17243b;} .switcher {background: #31415a;}
+      .policy {background: #162235; border-color: #30405a; box-shadow: none;}
+      .eyebrow {color: #a6c9f3;} .date, footer {color: #b3bfd1;} a {color: #8fc1ff;}
+    }
+    @media print {body {background:#fff; color:#000;} .topbar, footer {display:none;} main {padding:0;} .policy {box-shadow:none; padding:0; border:0;} }
+  </style>
+  <script>
+    // Select before the page is displayed, preventing a flash of the other language.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var requested = params.get('lang');
+      var lang = requested === 'pl' || requested === 'en' ? requested :
+        ((navigator.language || 'en').toLowerCase().startsWith('pl') ? 'pl' : 'en');
+      document.documentElement.lang = lang;
+      document.documentElement.dataset.selectedLanguage = lang;
+    }());
+  </script>
+  <style>
+    /* Without JavaScript, both language versions remain readable. */
+    html[data-selected-language="pl"] #policy-en, html[data-selected-language="en"] #policy-pl {display:none;}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">ReelMirror<small>Privacy / Prywatność</small></div>
+      <nav class="switcher" aria-label="Language / Język">
+        <button type="button" id="btn-pl" lang="pl" aria-controls="policy-pl" aria-pressed="false">PL</button>
+        <button type="button" id="btn-en" lang="en" aria-controls="policy-en" aria-pressed="false">EN</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+<article class="policy" id="policy-pl" lang="pl" aria-labelledby="heading-pl">
+<header class="page-heading"><div class="eyebrow">KXXR STUDIO <span aria-hidden="true">/</span> REELMIRROR</div><h1 id="heading-pl">Polityka prywatności ReelMirror na Androida</h1><p class="date">Data wejścia w życie — 14 listopada 2026 r.</p></header>
+<p class="intro">Ta polityka dotyczy aplikacji ReelMirror na Androida (com.reelmirror). Wydawcą aplikacji jest KXXR Studio, Polska. W sprawach prywatności skontaktuj się z nami pod adresem <a href="mailto:kxxr.studio@gmail.com">kxxr.studio@gmail.com</a>.</p>
+<section aria-labelledby="pl-section-1"><h2 id="pl-section-1">Kamera, mikrofon i nagrania</h2>
+<p>W trybie Kamera aplikacja używa aparatu do wyświetlania podglądu, przesyłania obrazu na żywo i zapisywania nagrań. Nagrywanie możesz uruchomić na telefonie lub z połączonego Monitora. Gdy opcja dźwięku jest włączona i aplikacja ma uprawnienie do mikrofonu, dźwięk trafia do pliku nagrania. Możesz nagrywać bez dźwięku. Aplikacja może wyświetlać powiadomienie o pracy kamery lub nagrywaniu.</p>
+<p>Nagrania są zapisywane jako pliki MP4 w pamięci multimediów telefonu używanego jako Kamera. Od Androida 10 aplikacja zapisuje je w folderze Movies/ReelMirror. Na liście nagrań aplikacja odczytuje m.in. nazwę, datę, czas trwania, rozmiar i rozdzielczość pliku. Gdy otwierasz nagranie, aplikacja udziela wybranemu odtwarzaczowi dostępu do tego pliku. Galeria lub inna aplikacja z dostępem do plików może tworzyć kopie nagrań zgodnie z ustawieniami urządzenia.</p>
+</section>
+<section aria-labelledby="pl-section-2"><h2 id="pl-section-2">Podgląd na drugim urządzeniu</h2>
+<p>W trybie Monitor aplikacja wyświetla obraz na żywo z połączonej Kamery. Transmisja obrazu może działać bez zapisywania nagrania. Do Monitora trafia obraz bez dźwięku. Aplikacja w trybie Monitor nie zapisuje odbieranego obrazu jako nagrania. Pliki MP4 pozostają na telefonie używanym jako Kamera, dopóki ich nie przeniesiesz lub nie skopiuje ich inna aplikacja z odpowiednim dostępem.</p>
+<p>Gdy aplikacja udostępnia Kamerę do wykrycia, inne urządzenia w sieci lokalnej mogą odczytać ogłoszenie zawierające model telefonu, losowy identyfikator instalacji i informacje potrzebne do nawiązania połączenia. Przy parowaniu Kamera otrzymuje nazwę i identyfikator Monitora oraz odczytuje adres IP połączenia. Zatwierdzony Monitor może odbierać podgląd, zmieniać ustawienia kamery oraz rozpoczynać i zatrzymywać nagranie. Monitor otrzymuje też informacje potrzebne do obsługi podglądu i nagrywania, np. o wolnym miejscu, jakości obrazu, stanie nagrywania, nazwie, czasie trwania i rozmiarze pliku.</p>
+<p>Podgląd wykorzystuje bezpośrednie połączenie WebRTC między urządzeniami. Aplikacja wyszukuje Kamerę w sieci lokalnej. Przy ręcznym połączeniu Monitor kontaktuje się ze wskazanym przez Ciebie adresem, który może znajdować się poza lokalną siecią Wi-Fi.</p>
+</section>
+<section aria-labelledby="pl-section-3"><h2 id="pl-section-3">Bezpieczeństwo i diagnostyka</h2>
+<p>WebRTC szyfruje strumień obrazu w trakcie transmisji. Osobny kanał połączenia, przez który urządzenia wymieniają dane parowania, informacje techniczne, polecenia i metadane nagrań, działa bez szyfrowania TLS. Po zapamiętaniu Monitora Kamera rozpoznaje go po identyfikatorze, dzięki czemu ponowne połączenie może nastąpić bez kolejnej akceptacji.</p>
+<p>Aplikacja zapisuje informacje diagnostyczne o połączeniach i błędach zapisu w pamięci aplikacji oraz w systemowych logach Androida. Mogą one zawierać adresy IP, nazwy i identyfikatory urządzeń oraz dane o pliku. Aplikacja nie przesyła automatycznie nagrań, obrazu na żywo ani tych logów na serwery wydawcy. Aplikacja działa bez konta, reklam, śledzenia reklamowego i analityki użycia.</p>
+<p>Jeśli zainstalujesz aplikację z Google Play i włączysz udostępnianie danych o użytkowaniu i diagnostyce w Androidzie, Google może zebrać dane o awariach lub przypadkach, w których aplikacja przestała odpowiadać. Google może udostępnić wydawcy informacje diagnostyczne za pośrednictwem Android vitals w Google Play Console, aby pomóc w rozpoznawaniu problemów ze stabilnością. Udostępnianiem danych diagnostycznych zarządzasz w ustawieniach Androida.</p>
+</section>
+<section aria-labelledby="pl-section-4"><h2 id="pl-section-4">Przechowywanie, usuwanie i uprawnienia</h2>
+<ul>
+<li>Nagrania pozostają w pamięci telefonu do czasu usunięcia. Możesz je usunąć w galerii lub menedżerze plików. Jeśli korzystasz z kosza lub kopii zapasowej multimediów, zarządzaj nimi w aplikacji, która je przechowuje.</li>
+<li>Ustawienia, identyfikator instalacji i zapamiętane parowania pozostają w danych aplikacji. Aplikacja zapamiętuje również ostatni ręcznie wpisany adres i port. Możesz usunąć te dane w ustawieniach Androida, wybierając ReelMirror i opcję wyczyszczenia danych aplikacji. Nagrania z pamięci multimediów usuwa się osobno.</li>
+<li>Kopia systemowa Androida może zawierać dane aplikacji, w tym ustawienia i parowania. System może przywrócić je z kopii lub przenieść na nowe urządzenie, zależnie od Twoich ustawień. Kopią zarządzasz w ustawieniach Androida.</li>
+<li>Diagnostyka wyświetlana w Monitorze obejmuje do 100 ostatnich wpisów przechowywanych w pamięci aplikacji. Systemowe logi są przechowywane zgodnie z ustawieniami i ograniczeniami Androida.</li>
+<li>Uprawnienia do aparatu, mikrofonu i powiadomień możesz zmienić w ustawieniach Androida. Cofnięcie uprawnienia do mikrofonu wyłącza nagrywanie dźwięku. Cofnięcie uprawnienia do aparatu uniemożliwia korzystanie z funkcji rejestrowania obrazu.</li>
+</ul>
+</section>
+<section aria-labelledby="pl-section-5"><h2 id="pl-section-5">Kontakt z wydawcą</h2>
+<p>Jeżeli napiszesz do nas, otrzymamy Twój adres e-mail, treść wiadomości i ewentualne załączniki. Używamy tych danych do rozpatrzenia sprawy i udzielenia odpowiedzi. Do obsługi poczty korzystamy z Gmaila. Podstawą przetwarzania zwykłej korespondencji jest prawnie uzasadniony interes polegający na obsłudze zapytań (art. 6 ust. 1 lit. f RODO). Jeżeli wiadomość dotyczy wykonania prawa wynikającego z RODO, przetwarzamy ją w celu wypełnienia obowiązku prawnego (art. 6 ust. 1 lit. c RODO).</p>
+<p>Korespondencję przechowujemy przez czas potrzebny do rozpatrzenia sprawy. Możemy przechować ją dłużej w zakresie wymaganym przez prawo. W sprawie swoich danych możesz napisać na podany wyżej adres. Zależnie od podstawy i okoliczności przetwarzania możesz skorzystać z prawa dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania lub sprzeciwu. Możesz także złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych.</p>
+</section>
+</article>
+<article class="policy" id="policy-en" lang="en" aria-labelledby="heading-en">
+<header class="page-heading"><div class="eyebrow">KXXR STUDIO <span aria-hidden="true">/</span> REELMIRROR</div><h1 id="heading-en">Privacy Policy for ReelMirror on Android</h1><p class="date">Effective date - November 14, 2026</p></header>
+<p class="intro">This policy applies to the ReelMirror app for Android (com.reelmirror). The app is published by KXXR Studio, Poland. For privacy inquiries, contact us at <a href="mailto:kxxr.studio@gmail.com">kxxr.studio@gmail.com</a>.</p>
+<section aria-labelledby="en-section-1"><h2 id="en-section-1">Camera, microphone and recordings</h2>
+<p>In Camera mode, the app uses your device&#x27;s camera to display a preview, stream live video and save recordings. You can start recording on the phone or from a connected Monitor. When audio recording is enabled and the app has microphone permission, audio is included in the recording file. You can record without audio. The app may display a notification when the camera is active or recording is in progress.</p>
+<p>Recordings are saved as MP4 files in the media storage of the phone used as the Camera. On Android 10 and later, the app saves them in the Movies/ReelMirror folder. To display your recordings, the app reads file details such as the name, date, duration, size and resolution. When you open a recording, the app grants your selected media player access to the file. Your gallery or another app with file access may copy recordings according to your device settings.</p>
+</section>
+<section aria-labelledby="en-section-2"><h2 id="en-section-2">Live preview on a second device</h2>
+<p>In Monitor mode, the app displays live video from a connected Camera. Live streaming can run without saving a recording. The Monitor receives video without audio. In Monitor mode, the app does not save the incoming video as a recording. MP4 files stay on the phone used as the Camera unless you transfer them or another app with access copies them.</p>
+<p>When the app makes the Camera discoverable, other devices on the local network can read a broadcast containing the phone model, a randomly generated installation identifier and connection details. During pairing, the Camera receives the Monitor&#x27;s name and identifier and reads the IP address of the connection. An approved Monitor can view the live stream, change camera settings, and start and stop recording.</p>
+<p>The Monitor also receives details needed to operate the preview and recording controls, including available storage, video quality, recording status, file name, duration and size.</p>
+<p>The live preview uses a direct WebRTC connection between devices. The app looks for the Camera on the local network. If you connect manually, the Monitor contacts the address you enter, which may be outside your local Wi-Fi network.</p>
+</section>
+<section aria-labelledby="en-section-3"><h2 id="en-section-3">Security and diagnostics</h2>
+<p>WebRTC encrypts the video stream in transit. The devices use a separate channel to exchange pairing data, technical connection details, commands and recording metadata. That channel operates without TLS encryption. If you choose to remember a Monitor, the Camera recognizes it by its identifier so it can reconnect without another approval.</p>
+<p>The app keeps diagnostic information about connections and recording errors in app memory and in Android system logs. This information may include IP addresses, device names and identifiers, and file details. The app does not automatically send recordings, live video or these logs to the publisher&#x27;s servers. The app operates without accounts, ads, ad tracking or usage analytics.</p>
+<p>If you install the app from Google Play and enable usage and diagnostics sharing in Android, Google may collect data about crashes or instances when the app stops responding. Google may provide diagnostic information to the publisher through Android vitals in Google Play Console to help identify stability issues. You can manage diagnostic sharing in Android settings.</p>
+</section>
+<section aria-labelledby="en-section-4"><h2 id="en-section-4">Retention, deletion and permissions</h2>
+<ul>
+<li>Recordings stay on your phone until deleted. You can delete them in your gallery or file manager. If you use a trash folder or media backup, manage those copies in the app that stores them.</li>
+<li>Settings, the installation identifier and remembered pairings stay in the app&#x27;s data. The app also remembers the last address and port you entered manually. To delete this data, select ReelMirror in Android settings and clear its app data. Delete recordings in media storage separately.</li>
+<li>Android system backups may include app data such as settings and pairings. Depending on your settings, Android may restore that data from a backup or transfer it to a new device. You can manage backups in Android settings.</li>
+<li>Diagnostics shown in Monitor mode are limited to the 100 most recent entries kept in app memory. Android retains system logs according to its settings and limits.</li>
+<li>Camera, microphone and notification permissions can be changed in Android settings. Revoking microphone permission disables audio recording. Revoking camera permission prevents the app from capturing video.</li>
+</ul>
+</section>
+<section aria-labelledby="en-section-5"><h2 id="en-section-5">Contacting the publisher</h2>
+<p>If you contact us, we receive your email address, the contents of your message and any attachments. We use this information to handle your inquiry and respond. We use Gmail to handle email. Our legal basis for routine correspondence is our legitimate interest in handling inquiries (Article 6(1)(f) GDPR). If your message is about exercising a GDPR right, we process it to comply with a legal obligation (Article 6(1)(c) GDPR).</p>
+<p>We keep correspondence for as long as needed to resolve the matter. We may retain it for longer to the extent required by law. You can contact us about your data at the email address above. Depending on the legal basis and circumstances, you may have the right to access, rectify or erase your personal data, restrict its processing, or object to its processing. You may also lodge a complaint with the President of the Polish Personal Data Protection Office.</p>
+</section>
+</article>
+  </main>
+  <footer>© KXXR Studio · ReelMirror</footer>
+  <script>
+    (function () {
+      var buttons = {pl: document.getElementById('btn-pl'), en: document.getElementById('btn-en')};
+      function selectLanguage(lang, updateUrl) {
+        if (lang !== 'pl' && lang !== 'en') return;
+        document.documentElement.lang = lang;
+        document.documentElement.dataset.selectedLanguage = lang;
+        document.getElementById('policy-pl').hidden = lang !== 'pl';
+        document.getElementById('policy-en').hidden = lang !== 'en';
+        buttons.pl.setAttribute('aria-pressed', String(lang === 'pl'));
+        buttons.en.setAttribute('aria-pressed', String(lang === 'en'));
+        if (updateUrl) {
+          var url = new URL(location.href);
+          url.searchParams.set('lang', lang);
+          history.replaceState(null, '', url);
+        }
+      }
+      buttons.pl.addEventListener('click', function () { selectLanguage('pl', true); });
+      buttons.en.addEventListener('click', function () { selectLanguage('en', true); });
+      selectLanguage(document.documentElement.dataset.selectedLanguage || 'en', false);
+    }());
+  </script>
+</body>
+</html>
